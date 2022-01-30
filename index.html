@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+<title>ReCaptcha</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+    if (grecaptcha.getResponse() == "success") {
+        function Redirect() {
+            window.location.href = "https://www.youtube.com/";
+        }
+
+        Redirect()
+
+        setTimeout(Redirect, 1000);
+    } else alert("You can't proceed!");
+</script>
+
+<div data-type="image" class="g-recaptcha" data-sitekey="my-sitekey"></div>
+    </head>
+    <body style="background-color:#117ACA;">
+       <h4> Confirm that you are not a robot!</h4>
+    </body>
+</html>
